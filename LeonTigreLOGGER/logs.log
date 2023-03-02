@@ -1,0 +1,3 @@
+[2023-03-0122:31:07] [ WARN ] [Main:11] Advertencia el metodo MAIN esta por finalizar
+[2023-03-0122:31:07] [ DEBUG] [Main:12] Esto va a mostrarse solo si el infoLogger esta en DEBUG
+[2023-03-0122:31:07] [ INFO ] [Main:13] Finalizamos el thread MAIN
