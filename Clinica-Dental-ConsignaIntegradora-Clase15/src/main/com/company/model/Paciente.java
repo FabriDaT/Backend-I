@@ -1,5 +1,6 @@
 package main.com.company.model;
 
+import java.sql.Date;
 import java.time.LocalDate;
 
 public class Paciente {
@@ -7,11 +8,11 @@ public class Paciente {
     private Long id;
     private String nombre;
     private  String apellido;
-    private int DNI;
-    private LocalDate fechaDeIngreso;
+    private String DNI;
+    private Date fechaDeIngreso;
     private Domicilio domicilio;
 
-    public Paciente(Long id, String nombre, String apellido, int DNI, LocalDate fechaDeIngreso, Domicilio domicilio) {
+    public Paciente(Long id, String nombre, String apellido, String DNI, Date fechaDeIngreso, Domicilio domicilio) {
         this.id = id;
         this.nombre = nombre;
         this.apellido = apellido;
@@ -44,19 +45,19 @@ public class Paciente {
         this.apellido = apellido;
     }
 
-    public int getDNI() {
+    public String getDNI() {
         return DNI;
     }
 
-    public void setDNI(int DNI) {
+    public void setDNI(String DNI) {
         this.DNI = DNI;
     }
 
-    public LocalDate getFechaDeIngreso() {
+    public Date getFechaDeIngreso() {
         return fechaDeIngreso;
     }
 
-    public void setFechaDeIngreso(LocalDate fechaDeIngreso) {
+    public void setFechaDeIngreso(Date fechaDeIngreso) {
         this.fechaDeIngreso = fechaDeIngreso;
     }
 

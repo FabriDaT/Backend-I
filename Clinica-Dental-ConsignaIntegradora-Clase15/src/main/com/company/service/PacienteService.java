@@ -9,8 +9,10 @@ public class PacienteService {
     public void setPacienteDao(IDao<Paciente> pacienteDao) {
         PacienteDao = pacienteDao;
     }
+
+    //constructor para instanciar clase en el main//
     public PacienteService(IDao<Paciente> pacienteDao) {
-        PacienteDao = pacienteDao;
+        this.PacienteDao = pacienteDao;
     }
 
     public Paciente guardar(Paciente paciente) {
@@ -26,8 +28,9 @@ public class PacienteService {
     }
 
     public void modificar(Long id) {
-            PacienteDao.modificar(id)
+            PacienteDao.modificar(id);
     }
+
     public  void crear_DB(){
         PacienteDao.crear_BD();
     }
