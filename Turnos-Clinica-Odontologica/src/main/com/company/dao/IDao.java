@@ -1,0 +1,11 @@
+package main.com.company.dao;
+
+import java.util.List;
+
+public interface IDao<T> {
+    public void createDB();
+    public List<T> listar();
+    public T agregar(T t);
+    public T modificar(Long  id);
+    public void eliminar(Long id);
+}

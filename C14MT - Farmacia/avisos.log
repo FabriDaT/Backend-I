@@ -1,0 +1,22 @@
+[2023-03-0320:41:47] [ INFO ] [MedicamentoIDAOH2:31] Base de datos creada
+[2023-03-0320:41:47] [ INFO ] [MedicamentoIDAOH2:53] Medicamento guardado
+[2023-03-0320:41:47] [ INFO ] [MedicamentoIDAOH2:68] Medicamento encontrado
+[2023-03-0320:45:09] [ INFO ] [MedicamentoIDAOH2:31] Base de datos creada
+[2023-03-0320:45:09] [ INFO ] [MedicamentoIDAOH2:53] Medicamento guardado
+[2023-03-0320:45:09] [ INFO ] [MedicamentoIDAOH2:68] Medicamento encontrado
+[2023-03-0320:46:59] [ INFO ] [MedicamentoIDAOH2:31] Base de datos creada
+[2023-03-0320:46:59] [ INFO ] [MedicamentoIDAOH2:50] Medicamento guardadoMedicamento{codigoNumerico=1, nombre='ibuprofeno', laboratorio='farmacia', cantidad=100, precio=2.5}
+[2023-03-0320:46:59] [ INFO ] [MedicamentoIDAOH2:68] Medicamento encontrado
+[2023-03-0320:47:10] [ INFO ] [MedicamentoIDAOH2:31] Base de datos creada
+[2023-03-0320:47:10] [ INFO ] [MedicamentoIDAOH2:50] Medicamento guardado: Medicamento{codigoNumerico=1, nombre='ibuprofeno', laboratorio='farmacia', cantidad=100, precio=2.5}
+[2023-03-0320:47:10] [ INFO ] [MedicamentoIDAOH2:68] Medicamento encontrado
+[2023-03-0320:47:54] [ INFO ] [MedicamentoIDAOH2:31] Base de datos creada
+[2023-03-0320:47:54] [ INFO ] [MedicamentoIDAOH2:50] Medicamento guardado: Medicamento{codigoNumerico=1, nombre='ibuprofeno', laboratorio='farmacia', cantidad=100, precio=2.5}
+[2023-03-0320:47:54] [ INFO ] [MedicamentoIDAOH2:68] Medicamento encontrado: Medicamento{codigoNumerico=1, nombre='ibuprofeno', laboratorio='farmacia', cantidad=100, precio=2.5}
+[2023-03-0320:51:08] [ INFO ] [MedicamentoIDAOH2:31] Base de datos creada
+[2023-03-0320:51:08] [ INFO ] [MedicamentoIDAOH2:50] Medicamento guardado: Medicamento{codigoNumerico=1, nombre='ibuprofeno', laboratorio='farmacia', cantidad=100, precio=2.5}
+[2023-03-0320:51:08] [ INFO ] [MedicamentoIDAOH2:100] Medicamento encontrado: Medicamento{codigoNumerico=1, nombre='ibuprofeno', laboratorio='farmacia', cantidad=100, precio=2.5}
+[2023-03-0320:51:34] [ INFO ] [MedicamentoIDAOH2:31] Base de datos creada
+[2023-03-0320:51:34] [ INFO ] [MedicamentoIDAOH2:50] Medicamento guardado: Medicamento{codigoNumerico=1, nombre='ibuprofeno', laboratorio='farmacia', cantidad=100, precio=2.5}
+[2023-03-0320:51:34] [ INFO ] [MedicamentoIDAOH2:100] Medicamento encontrado: Medicamento{codigoNumerico=1, nombre='ibuprofeno', laboratorio='farmacia', cantidad=100, precio=2.5}
+[2023-03-0320:51:34] [ ERROR] [MedicamentoIDAOH2:104] Medicamento no encontrado

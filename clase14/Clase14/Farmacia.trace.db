@@ -1,0 +1,6 @@
+2023-03-03 20:22:05 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "MEDICAMENTOS" not found; SQL statement:
+INSERT INTO MEDICAMENTOS VALUES (?,?,?,?,?); [42102-199]
+2023-03-03 20:22:53 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "MEDICAMENTO" not found; SQL statement:
+INSERT INTO MEDICAMENTO VALUES (?,?,?,?,?); [42102-199]
