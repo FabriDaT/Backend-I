@@ -1,0 +1,1 @@
+ DROP TABLE IF EXISTS odontologos; CREATE TABLE odontologos ( id BIGINT PRIMARY KEY,  apellido VARCHAR(255),  nombre VARCHAR(255),  matricula VARCHAR(255));

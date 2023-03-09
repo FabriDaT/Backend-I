@@ -1,18 +1,17 @@
+DROP TABLE  IF EXISTS DOMICILIOS
 
+CREATE TABLE DOMICILIOS (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  calle VARCHAR(100) ,
+  numero INT,
+  localidad VARCHAR(100) ,
+  provincia VARCHAR(100) ,
+);
+**
 CREATE TABLE PACIENTES (
   id INT AUTO_INCREMENT PRIMARY KEY,
-  nombre VARCHAR(50) NOT NULL,
-  apellido VARCHAR(50) NOT NULL,
-  dni VARCHAR(10) NOT NULL,
-  fecha_ingreso DATE NOT NULL,
-  domicilio_id INT NOT NULL,
-
-);
-
-CREATE TABLE DOMICILIO (
-  id INT AUTO_INCREMENT PRIMARY KEY,
-  calle VARCHAR(50) NOT NULL,
-  numero INT NOT NULL,
-  localidad VARCHAR(50) NOT NULL,
-  provincia VARCHAR(50) NOT NULL
-);
+  nombre VARCHAR(50) ,
+  apellido VARCHAR(50) ,
+  dni VARCHAR(10) ,
+  fechaIngreso DATE ,
+  domicilio_id INT);

@@ -10,11 +10,12 @@ import java.time.LocalDate;
 
 public class Main {
     public static void main(String[] args) {
-        Paciente paciente1 = new Paciente(1L,"pepito","gonzalez","123456", Date.valueOf(LocalDate.now()),new Domicilio(1L,"mendoza",2134,"trinidad","san juan") );
-        Domicilio domi1 = new Domicilio(2L,"Av Mendoza", 1220,"trinidad", "san juan");
-        // creamos el service y seteamos estrategia
-        PacienteService ps = new PacienteService(new PacienteDAOH2());
-        ps.crear_DB();
-        ps.guardar(paciente1);
+
+        Domicilio domicilio1 = new Domicilio("san luis",1234, "junin","bs as");
+        Paciente paciente1 = new Paciente("jose","ruiz","3033494654",LocalDate.now(), domicilio1);
+
+
+
+
     }
 }

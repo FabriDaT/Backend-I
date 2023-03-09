@@ -4,10 +4,8 @@ CREATE TABLE PACIENTES (
   nombre VARCHAR(50) NOT NULL,
   apellido VARCHAR(50) NOT NULL,
   dni VARCHAR(10) NOT NULL,
-  fecha_ingreso DATE NOT NULL,
-  domicilio_id INT NOT NULL,
-
-);
+  fechaIngreso DATE NOT NULL,
+  domicilio_id INT NOT NULL);
 
 CREATE TABLE DOMICILIO (
   id INT AUTO_INCREMENT PRIMARY KEY,
