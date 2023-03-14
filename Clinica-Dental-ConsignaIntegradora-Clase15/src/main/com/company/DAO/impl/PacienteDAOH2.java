@@ -50,14 +50,14 @@ public class PacienteDAOH2 implements IDao<Paciente> {
                 "(?, ?,?,?)", Statement.RETURN_GENERATED_KEYS);
         ps.setString(1,unPaciente.getNombre());
         ps.setInt(2,unPaciente.getApellido());
-        ps.setString(3,unPaciente.getDNI();
-        ps.setString(4,unPaciente.getFechaDeIngreso();
+        ps.setString(3,unPaciente.getDNI());
+        ps.setString(4,unPaciente.getFechaDeIngreso());
         ps.setInt(5,unPaciente.getID_domicilio());
         ps.executeUpdate();
 
         ResultSet keys = ps.getGeneratedKeys();
         while(keys.next()){
-            unPaciente.setId(keys.getInt(1));
+            unPaciente.setId(keys.getLong(1));
         }
 
         ps.close();

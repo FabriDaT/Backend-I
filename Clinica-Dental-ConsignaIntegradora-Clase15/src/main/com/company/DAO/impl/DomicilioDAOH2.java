@@ -48,8 +48,8 @@ public class DomicilioDAOH2 implements IDao<Domicilio> {
                 "(?, ?,?,?)", Statement.RETURN_GENERATED_KEYS);
         ps.setString(1,unDomicilio.getCalle());
         ps.setInt(2,unDomicilio.getNumero());
-        ps.setString(3,unDomicilio.getLocalidad();
-        ps.setString(4,unDomicilio.getProvincia();
+        ps.setString(3,unDomicilio.getLocalidad());
+        ps.setString(4,unDomicilio.getProvincia());
 
         ps.executeUpdate();
 
