@@ -3,11 +3,13 @@ package F4V.ClinicaDental.DAO.Impl;
 import F4V.ClinicaDental.DAO.IDao;
 import F4V.ClinicaDental.Model.Domicilio;
 import F4V.ClinicaDental.Model.Paciente;
+import org.springframework.stereotype.Service;
 
 import java.sql.*;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.logging.Logger;
 
 public class PacienteDaoH2  implements IDao<Paciente> {
 
@@ -19,7 +21,7 @@ public class PacienteDaoH2  implements IDao<Paciente> {
 
     private DomicilioDaoH2 domicilioDaoH2 = new DomicilioDaoH2();
 
-    private static final Logger LOGGER= Logger.getLogger(PacienteDaoH2.class);
+ //   private static final Logger LOGGER= Logger.getLogger(PacienteDaoH2.class);
 
 
 
@@ -29,7 +31,7 @@ public class PacienteDaoH2  implements IDao<Paciente> {
         Connection connection = null;
         PreparedStatement preparedStatement = null;
 
-        LOGGER.info("Iniciando una operación gardar un Paciente");
+        // LOGGER.info("Iniciando una operación gardar un Paciente");
 
         try {
             //1 Levantar el driver y Conectarnos
@@ -64,7 +66,7 @@ public class PacienteDaoH2  implements IDao<Paciente> {
             preparedStatement.close();
 
         } catch (SQLException | ClassNotFoundException throwables) {
-            LOGGER.error("Error al guardar un Paciente");
+          //  LOGGER.error("Error al guardar un Paciente");
             throwables.printStackTrace();
         }
         return paciente;

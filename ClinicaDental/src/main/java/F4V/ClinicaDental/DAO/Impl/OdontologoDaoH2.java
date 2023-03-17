@@ -6,6 +6,7 @@ import F4V.ClinicaDental.Model.Odontologo;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.logging.Logger;
 
 public class OdontologoDaoH2 implements IDao<Odontologo> {
 
@@ -15,13 +16,13 @@ public class OdontologoDaoH2 implements IDao<Odontologo> {
     private final static String DB_USER ="sa";
     private final static String DB_PASSWORD = "";
 
-    private static final Logger LOGGER= Logger.getLogger(OdontologoDaoH2.class);
+   // private static final Logger LOGGER= Logger.getLogger(OdontologoDaoH2.class);
 
     @Override
     public Odontologo guardar(Odontologo odontologo) {
         Connection connection = null;
         PreparedStatement preparedStatement = null;
-        LOGGER.info("Iniciando una operación gardar un odontologo");
+        //LOGGER.info("Iniciando una operación gardar un odontologo");
         try {
             //1 Levantar el driver
             Class.forName(DB_JDBC_DRIVER);
@@ -48,7 +49,7 @@ public class OdontologoDaoH2 implements IDao<Odontologo> {
             preparedStatement.close();
 
         } catch (Exception e) {
-            LOGGER.error("Error al guardar un odontologo", e);
+           // LOGGER.error("Error al guardar un odontologo", e);
             e.printStackTrace();
         }
         return odontologo;

@@ -6,6 +6,7 @@ import F4V.ClinicaDental.Model.Domicilio;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.logging.Logger;
 
 public class DomicilioDaoH2  implements IDao<Domicilio> {
 
@@ -15,7 +16,7 @@ public class DomicilioDaoH2  implements IDao<Domicilio> {
     private final static String DB_USER ="sa";
     private final static String DB_PASSWORD = "";
 
-    private static final Logger LOGGER= Logger.getLogger(DomicilioDaoH2.class);
+   // private static final Logger LOGGER= Logger.getLogger(DomicilioDaoH2.class);
 
 
     @Override
@@ -23,7 +24,7 @@ public class DomicilioDaoH2  implements IDao<Domicilio> {
 
         Connection connection = null;
         PreparedStatement preparedStatement = null;
-        LOGGER.info("Iniciando una operación gardar un domicilio");
+        //LOGGER.info("Iniciando una operación gardar un domicilio");
 
         try {
             //1 Levantar el driver y Conectarnos
@@ -48,7 +49,7 @@ public class DomicilioDaoH2  implements IDao<Domicilio> {
             preparedStatement.close();
 
         } catch (SQLException | ClassNotFoundException throwables) {
-            LOGGER.error("Error al guardar un domicilio", throwables);
+            //LOGGER.error("Error al guardar un domicilio", throwables);
             throwables.printStackTrace();
         }
         return domicilio;
