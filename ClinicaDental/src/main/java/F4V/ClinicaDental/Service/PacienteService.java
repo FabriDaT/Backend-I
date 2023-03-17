@@ -1,9 +1,11 @@
-package com.dh.clinica.service;
+package F4V.ClinicaDental.Service;
 
-import com.dh.clinica.dao.IDao;
-import com.dh.clinica.model.Paciente;
-
+import F4V.ClinicaDental.DAO.IDao;
+import F4V.ClinicaDental.DAO.Impl.PacienteDaoH2;
+import F4V.ClinicaDental.Model.Paciente;
 import java.util.List;
+
+
 
 public class PacienteService {
 
@@ -31,10 +33,14 @@ public class PacienteService {
         return pacienteIDao.buscarTodos();
     }
     public void eliminar(int id){
-         pacienteIDao.eliminar(id);
+        pacienteIDao.eliminar(id);
     }
-    
+
     public void actualizar(Paciente p){
         pacienteIDao.actualizar(p);
     }
+
+
+
+
 }
