@@ -4,21 +4,21 @@ import F4V.ClinicaDental.DAO.Impl.PacienteDaoH2;
 import F4V.ClinicaDental.Model.Paciente;
 import F4V.ClinicaDental.Service.PacienteService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 @RestController
 @RequestMapping
+
 public class PacienteController {
 
-    private final PacienteService pacienteService;
+    private PacienteService pacienteService = null;
 
-
-    @Autowired
     public PacienteController(PacienteService pacienteService) {
-        this.pacienteService = pacienteService;
         pacienteService.setPacienteIDao(new PacienteDaoH2());
+
     }
 
     @PostMapping("/")

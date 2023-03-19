@@ -19,7 +19,7 @@ public class PacienteDaoH2  implements IDao<Paciente> {
     private final static String DB_USER ="sa";
     private final static String DB_PASSWORD = "";
 
-    private DomicilioDaoH2 domicilioDaoH2 = new DomicilioDaoH2();
+    private final DomicilioDaoH2 domicilioDaoH2 = new DomicilioDaoH2();
 
  //   private static final Logger LOGGER= Logger.getLogger(PacienteDaoH2.class);
 

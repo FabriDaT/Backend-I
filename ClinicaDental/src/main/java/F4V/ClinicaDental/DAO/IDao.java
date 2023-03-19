@@ -1,14 +1,19 @@
 package F4V.ClinicaDental.DAO;
 
+import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Controller;
+import org.springframework.stereotype.Repository;
+import org.springframework.stereotype.Service;
+
 import java.util.List;
 
 public interface IDao <T>{
 
-    public T guardar(T t);
-    public T buscar(int id);
-    public void eliminar(int id);
-    public void actualizar(T t);
-    public List<T> buscarTodos();
+    T guardar(T t);
+    T buscar(int id);
+    void eliminar(int id);
+    void actualizar(T t);
+    List<T> buscarTodos();
 
 
 }
