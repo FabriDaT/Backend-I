@@ -15,8 +15,8 @@ public class PacienteDaoH2  implements IDao<Paciente> {
 
     private final static String DB_JDBC_DRIVER = "org.h2.Driver";
     //con la instruccion INIT=RUNSCRIPT cuando se conecta a la base ejecuta el script de sql que esta en dicho archivo
-    private final static String DB_URL = "jdbc:h2:~/db_clinica;INIT=RUNSCRIPT FROM 'create.sql'";
-    private final static String DB_USER ="sa";
+    private final static String DB_URL = "jdbc:h2:~/DB_odontologos;INIT=RUNSCRIPT FROM 'create.sql'";
+    private final static String DB_USER ="fabri";
     private final static String DB_PASSWORD = "";
 
     private final DomicilioDaoH2 domicilioDaoH2 = new DomicilioDaoH2();

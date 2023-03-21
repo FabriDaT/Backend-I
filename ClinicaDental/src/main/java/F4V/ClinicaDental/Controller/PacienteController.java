@@ -16,9 +16,9 @@ public class PacienteController {
 
     private PacienteService pacienteService = null;
 
-    public PacienteController(PacienteService pacienteService) {
-        pacienteService.setPacienteIDao(new PacienteDaoH2());
-
+    public PacienteController() {
+       // pacienteService.setPacienteIDao(new PacienteDaoH2());
+        this.pacienteService = new PacienteService(new PacienteDaoH2());
     }
 
     @PostMapping("/")
