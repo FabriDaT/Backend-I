@@ -13,9 +13,6 @@ public class ClinicaDentalApplication {
 		SpringApplication.run(ClinicaDentalApplication.class, args);
 	}
 
-	@GetMapping("prueba")
-	public String saludo(){
-		return "Hola wachin";
-	}
+
 
 }

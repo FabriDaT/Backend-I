@@ -18,7 +18,7 @@ public class PacienteDaoH2  implements Idao<Paciente> {
 
     private DomicilioDaoH2 domicilioDaoH2 = new DomicilioDaoH2();
 
-    private static final Logger LOGGER= Logger.getLogger(PacienteDaoH2.class);
+
 
 
 
@@ -28,7 +28,7 @@ public class PacienteDaoH2  implements Idao<Paciente> {
         Connection connection = null;
         PreparedStatement preparedStatement = null;
 
-        LOGGER.info("Iniciando una operación gardar un Paciente");
+
 
         try {
             //1 Levantar el driver y Conectarnos
@@ -63,7 +63,7 @@ public class PacienteDaoH2  implements Idao<Paciente> {
             preparedStatement.close();
 
         } catch (SQLException | ClassNotFoundException throwables) {
-            LOGGER.error("Error al guardar un Paciente");
+
             throwables.printStackTrace();
         }
         return paciente;

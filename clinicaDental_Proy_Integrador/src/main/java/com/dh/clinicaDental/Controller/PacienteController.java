@@ -9,20 +9,19 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-@RestController
-@RequestMapping("/pacientes")
+
 public class PacienteController {
 
     private PacienteService pacienteService;
-@Autowired
+
     public PacienteController(PacienteService pacienteService) {
         this.pacienteService = pacienteService;
         pacienteService.setPacienteIdao(new PacienteDaoH2());
     }
 
-    @PostMapping("/")
-    public Paciente guardar(@RequestBody Paciente paciente){
-     return pacienteService.guardar(paciente);
+
+    public Paciente agregar(@RequestBody Paciente paciente){
+     return pacienteService.agregar(paciente);
     }
 
 }
