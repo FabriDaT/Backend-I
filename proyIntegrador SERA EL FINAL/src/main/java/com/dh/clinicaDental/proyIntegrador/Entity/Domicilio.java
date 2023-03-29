@@ -1,13 +1,15 @@
 package com.dh.clinicaDental.proyIntegrador.Entity;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 
 @Entity
 @Table(name = "domicilios")
 public class Domicilio {
+    @Id
+    @GeneratedValue
     private Long id;
     private String domicilio;
+    @OneToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     private Paciente paciente;
 
 
