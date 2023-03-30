@@ -14,10 +14,10 @@ public class Turno {
     private LocalDate dia;
     private LocalTime hora;
     @ManyToOne
-    @JoinColumn(name = "paciente_id", nullable = false)
+    @JoinColumn(name = "id", nullable = false)
     private Paciente paciente;
     @ManyToOne
-    @JoinColumn(name = "odontologo_id", nullable = false)
+    @JoinColumn(name = "id", nullable = false)
     private Odontologo odontologo;
 
 
