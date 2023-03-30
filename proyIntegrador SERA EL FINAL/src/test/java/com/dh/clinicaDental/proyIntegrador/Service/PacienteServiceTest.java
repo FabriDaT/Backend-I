@@ -12,7 +12,7 @@ class PacienteServiceTest {
     @Autowired
     private IPacienteService pacienteService;
     @Test
-    public  void crearTestPacienteService(){
+    public void crearTestPacienteService(){
         PacienteDTO pacienteDTO = new PacienteDTO();
         pacienteDTO.setNombre("Fabricio");
         pacienteDTO.setApellido("Turrina");

@@ -17,14 +17,14 @@ public class Odontologo {
     private Set<Paciente> pacientes;
     @OneToMany(mappedBy = "odontologo")
     @JsonIgnore // en relacion 1 a M se recomiendo para evitar bucle infinito
-    private Turno turno;
+    private List<Turno> turno;
 
     public Turno getTurno() {
-        return turno;
+        return (Turno) turno;
     }
 
     public void setTurno(Turno turno) {
-        this.turno = turno;
+        this.turno = (List<Turno>) turno;
     }
 
     public Long getId() {

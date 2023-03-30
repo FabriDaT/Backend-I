@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 
 
 import java.time.LocalDate;
+import java.util.List;
 
 @Entity
 @Table( name = "pacientes")
@@ -17,7 +18,7 @@ public class Paciente {
     private int DNI;
     @OneToMany( mappedBy = "paciente")
     @JsonIgnore    // para que ignore esta propiedad cuando mapee, cuando se pase a json
-    private Turno turno;
+    private List<Turno> turno;
     private LocalDate fechaDeAlta;
 
     private Odontologo odontologo;
@@ -30,12 +31,12 @@ public class Paciente {
         this.id = id;
     }
 
-    public Turno getTurno() {
+    public List<Turno> getTurno() {
         return turno;
     }
 
     public void setTurno(Turno turno) {
-        this.turno = turno;
+        this.turno = (List<Turno>) turno;
     }
 
     public String getNombre() {
