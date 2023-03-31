@@ -5,6 +5,7 @@ import jakarta.persistence.*;
 
 import java.time.LocalDate;
 import java.util.List;
+import java.util.Set;
 
 @Entity
 @Table( name = "pacientes")
@@ -12,16 +13,19 @@ public class Paciente {
     @Id
     @GeneratedValue
     private Long id;
+
     private String nombre;
     private String apellido;
+    @OneToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    @JoinColumn(name = "id_domicilio", referencedColumnName = "id")
     private Domicilio domicilio;
     private int DNI;
     @OneToMany( mappedBy = "paciente")
     @JsonIgnore    // para que ignore esta propiedad cuando mapee, cuando se pase a json
-    private List<Turno> turno;
+    private Set<Turno> turno;
     private LocalDate fechaDeAlta;
 
-    private Odontologo odontologo;
+   // private Odontologo odontologo;
 
     public Long getId() {
         return id;
@@ -31,12 +35,12 @@ public class Paciente {
         this.id = id;
     }
 
-    public List<Turno> getTurno() {
+    public Set<Turno> getTurno() {
         return turno;
     }
 
-    public void setTurno(Turno turno) {
-        this.turno = (List<Turno>) turno;
+    public void setTurno(Set<Turno> turno) {
+        this.turno = turno;
     }
 
     public String getNombre() {
@@ -79,11 +83,4 @@ public class Paciente {
         this.fechaDeAlta = fechaDeAlta;
     }
 
-    public Odontologo getOdontologo() {
-        return odontologo;
-    }
-
-    public void setOdontologo(Odontologo odontologo) {
-        this.odontologo = odontologo;
-    }
 }

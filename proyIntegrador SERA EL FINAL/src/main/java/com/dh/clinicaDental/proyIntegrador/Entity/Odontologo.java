@@ -14,17 +14,17 @@ public class Odontologo {
     private String nombre;
     private String apellido;
     private String matricula;
-    private Set<Paciente> pacientes;
+   // private Set<Paciente> pacientes;
     @OneToMany(mappedBy = "odontologo")
     @JsonIgnore // en relacion 1 a M se recomiendo para evitar bucle infinito
-    private List<Turno> turno;
+    private Set<Turno> turno;
 
-    public Turno getTurno() {
-        return (Turno) turno;
+    public Set<Turno> getTurno() {
+        return turno;
     }
 
-    public void setTurno(Turno turno) {
-        this.turno = (List<Turno>) turno;
+    public void setTurno(Set<Turno> turno) {
+        this.turno = turno;
     }
 
     public Long getId() {
@@ -59,11 +59,5 @@ public class Odontologo {
         this.matricula = matricula;
     }
 
-    public Set<Paciente> getPacientes() {
-        return pacientes;
-    }
 
-    public void setPacientes(Set<Paciente> pacientes) {
-        this.pacientes = pacientes;
-    }
 }

@@ -9,15 +9,16 @@ import java.time.LocalTime;
 @Table(name="turnos")
 public class Turno {
     @Id
-    @GeneratedValue
+    @SequenceGenerator(name = "turno_sequence",sequenceName = "turno_sequence")
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "turno_sequence")
     private Long id;
     private LocalDate dia;
     private LocalTime hora;
     @ManyToOne
-    @JoinColumn(name = "id", nullable = false)
+    @JoinColumn(name = "paciente_id", nullable = false)
     private Paciente paciente;
     @ManyToOne
-    @JoinColumn(name = "id", nullable = false)
+    @JoinColumn(name = "odontologo_id", nullable = false)
     private Odontologo odontologo;
 
 

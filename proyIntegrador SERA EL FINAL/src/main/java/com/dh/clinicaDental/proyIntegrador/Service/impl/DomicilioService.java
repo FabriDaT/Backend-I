@@ -1,14 +1,16 @@
-package com.dh.clinicaDental.proyIntegrador.Service;
+package com.dh.clinicaDental.proyIntegrador.Service.impl;
 
 import com.dh.clinicaDental.proyIntegrador.Entity.Domicilio;
 import com.dh.clinicaDental.proyIntegrador.Entity.DomicilioDTO;
 import com.dh.clinicaDental.proyIntegrador.Repository.IDomicilioRepository;
+import com.dh.clinicaDental.proyIntegrador.Service.IDomicilioService;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
-
-public class DomicilioService implements  IDomicilioService{
+@Service
+public class DomicilioService implements IDomicilioService {
 
     @Autowired
     private IDomicilioRepository DomicilioRepository;

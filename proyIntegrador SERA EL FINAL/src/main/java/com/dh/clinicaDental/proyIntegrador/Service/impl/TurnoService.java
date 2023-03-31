@@ -1,16 +1,18 @@
-package com.dh.clinicaDental.proyIntegrador.Service;
+package com.dh.clinicaDental.proyIntegrador.Service.impl;
 
 import com.dh.clinicaDental.proyIntegrador.Entity.*;
 import com.dh.clinicaDental.proyIntegrador.Repository.ITurnoRepository;
+import com.dh.clinicaDental.proyIntegrador.Service.ITurnoService;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.HashSet;
 import java.util.List;
 import java.util.Optional;
 import java.util.Set;
-
-public class TurnoService implements  ITurnoService{
+@Service
+public class TurnoService implements ITurnoService {
 
     @Autowired
     private ITurnoRepository TurnoRepository;

@@ -1,14 +1,22 @@
 package com.dh.clinicaDental.proyIntegrador.Entity;
 
+import jakarta.persistence.Column;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+@AllArgsConstructor
+@NoArgsConstructor
+@Getter
+@Setter
 public class DomicilioDTO {
 
-    private String domicilio;
+    private String calle;
 
-    public String getDomicilio() {
-        return domicilio;
-    }
+    private int numero;
 
-    public void setDomicilio(String domicilio) {
-        this.domicilio = domicilio;
-    }
+    private String localidad;
+
+    private String provincia;
 }

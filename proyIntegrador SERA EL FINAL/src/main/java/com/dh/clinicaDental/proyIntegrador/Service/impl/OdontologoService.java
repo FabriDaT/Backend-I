@@ -1,17 +1,19 @@
-package com.dh.clinicaDental.proyIntegrador.Service;
+package com.dh.clinicaDental.proyIntegrador.Service.impl;
 
 import com.dh.clinicaDental.proyIntegrador.Entity.Odontologo;
 import com.dh.clinicaDental.proyIntegrador.Entity.OdontologoDTO;
 import com.dh.clinicaDental.proyIntegrador.Repository.IOdontologoRepository;
+import com.dh.clinicaDental.proyIntegrador.Service.IOdontologoService;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.HashSet;
 import java.util.List;
 import java.util.Optional;
 import java.util.Set;
-
-public class OdontologoService implements  IOdontologoService{
+@Service
+public class OdontologoService implements IOdontologoService {
 
     @Autowired
     private IOdontologoRepository OdontologoRepository;

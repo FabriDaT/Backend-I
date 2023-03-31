@@ -6,13 +6,57 @@ import jakarta.persistence.*;
 @Table(name = "domicilios")
 public class Domicilio {
     @Id
-    @GeneratedValue
-    private Long id;
-    private String domicilio;
-    @OneToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    @SequenceGenerator(name = "domicilio_sequence",sequenceName = "domicilio_sequence")
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "domicilio_sequence")
+    private Integer id;
+
+    private String calle;
+
+    private int numero;
+
+    private String localidad;
+
+    private String provincia;
+
+    @OneToOne(mappedBy = "domicilio")
     private Paciente paciente;
 
+    public Integer getId() {
+        return id;
+    }
 
+
+    public String getCalle() {
+        return calle;
+    }
+
+    public void setCalle(String calle) {
+        this.calle = calle;
+    }
+
+    public int getNumero() {
+        return numero;
+    }
+
+    public void setNumero(int numero) {
+        this.numero = numero;
+    }
+
+    public String getLocalidad() {
+        return localidad;
+    }
+
+    public void setLocalidad(String localidad) {
+        this.localidad = localidad;
+    }
+
+    public String getProvincia() {
+        return provincia;
+    }
+
+    public void setProvincia(String provincia) {
+        this.provincia = provincia;
+    }
 
     public Paciente getPaciente() {
         return paciente;
@@ -20,21 +64,5 @@ public class Domicilio {
 
     public void setPaciente(Paciente paciente) {
         this.paciente = paciente;
-    }
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public String getDomicilio() {
-        return domicilio;
-    }
-
-    public void setDomicilio(String domicilio) {
-        this.domicilio = domicilio;
     }
 }
