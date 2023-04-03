@@ -1,17 +1,17 @@
 window.addEventListener('load', ()=>{
 
-    const formulario = document.querySelector('#guardar-btn')
-    formulario.addEventListener('submit', ()=>{
+    const formulario = document.querySelector('#form-agregar')
+    formulario.addEventListener('submit', (event)=>{
 
            //creamos un JSON que tendrá los datos del nuevo 
            const formData = {
-            nombre: document.querySelector('#nom').value,
-            apellido: document.querySelector('#ape').value,
-            matricula: document.querySelector('#mat').value,
+            nombre: document.querySelector('#nombre').value,
+            apellido: document.querySelector('#apellido').value,
+            matricula: document.querySelector('#matricula').value,
         };
 
         
-        const url = 'odontologos/registrar'
+        const url = '/odontologos/registrar'
         const settings = {
             method: 'POST',
             headers: {
@@ -49,9 +49,9 @@ window.addEventListener('load', ()=>{
     });
 
     function resetUploadForm(){
-        document.querySelector('#nom').value = "";
-        document.querySelector('#ape').value = "";
-        document.querySelector('#mat').value = "";
+        document.querySelector('#nombre').value = "";
+        document.querySelector('#apellido').value = "";
+        document.querySelector('#matricula').value = "";
 
     }
 
