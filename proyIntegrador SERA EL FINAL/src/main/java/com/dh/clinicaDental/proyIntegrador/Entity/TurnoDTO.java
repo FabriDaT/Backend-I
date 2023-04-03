@@ -13,7 +13,7 @@ import java.time.LocalTime;
 @Setter
 public class TurnoDTO {
 
-
+    private Long id;
     private LocalDate dia;
     private LocalTime hora;
     private Paciente paciente;

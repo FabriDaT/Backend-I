@@ -40,7 +40,8 @@ public class TurnoService implements ITurnoService {
 
     @Override
     public void modificarTurno(TurnoDTO turnoDTO) {
-            guardarTurno(turnoDTO);
+        eliminarTurno(turnoDTO.getId());
+        guardarTurno(turnoDTO);
     }
 
     @Override

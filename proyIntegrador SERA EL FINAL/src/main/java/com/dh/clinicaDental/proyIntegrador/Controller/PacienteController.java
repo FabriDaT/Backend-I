@@ -21,14 +21,15 @@ public class PacienteController {
         return ResponseEntity.ok(HttpStatus.OK);
     }
 
-    @GetMapping
-    public Set<PacienteDTO> obtenerTodos(){
-        return pacienteService.getTODOS();
-    }
 
     @GetMapping("/{id}")
     public PacienteDTO leerPaciente(@PathVariable Long id){
         return pacienteService.leerPaciente(id);
+    }
+
+    @GetMapping
+    public Set<PacienteDTO> traerTODOS(){
+        return  pacienteService.getTODOS();
     }
 
     @PutMapping("/{id}")
@@ -51,5 +52,4 @@ public class PacienteController {
         }
         return response;
     }
-
 }

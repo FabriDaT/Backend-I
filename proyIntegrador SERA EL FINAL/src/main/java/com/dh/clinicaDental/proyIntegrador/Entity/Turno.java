@@ -9,7 +9,7 @@ import java.time.LocalTime;
 @Table(name="turnos")
 public class Turno {
     @Id
-    @SequenceGenerator(name = "turno_sequence",sequenceName = "turno_sequence")
+    @SequenceGenerator(name = "turno_sequence",sequenceName = "turno_sequence", allocationSize = 1)
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "turno_sequence")
     private Long id;
     private LocalDate dia;

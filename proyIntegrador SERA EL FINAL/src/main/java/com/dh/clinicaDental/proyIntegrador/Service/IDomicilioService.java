@@ -9,7 +9,8 @@ public interface IDomicilioService {
     void crearDomicilio(DomicilioDTO domicilioDTO);
     DomicilioDTO leerDomicilio(Long id);
     void modificarDomicilio(DomicilioDTO domicilioDTO);
-    void eliminarPaciente(Long id);
+    void eliminarDomicilio(Long id);
+
     Set<DomicilioDTO> getTODOS();
 
 }

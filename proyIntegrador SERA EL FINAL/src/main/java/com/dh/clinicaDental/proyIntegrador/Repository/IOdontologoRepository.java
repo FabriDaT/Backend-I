@@ -9,6 +9,4 @@ public interface IOdontologoRepository extends JpaRepository<Odontologo, Long> {
 
 
 
-
-
 }

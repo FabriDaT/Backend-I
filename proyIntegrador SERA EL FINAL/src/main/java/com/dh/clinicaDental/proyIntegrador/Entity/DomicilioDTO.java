@@ -11,7 +11,7 @@ import lombok.Setter;
 @Getter
 @Setter
 public class DomicilioDTO {
-
+    private Long id;
     private String calle;
 
     private int numero;

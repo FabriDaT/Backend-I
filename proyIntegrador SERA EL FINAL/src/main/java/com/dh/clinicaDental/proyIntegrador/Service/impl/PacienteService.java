@@ -19,8 +19,10 @@ public class PacienteService implements IPacienteService {
 
     @Autowired
     private IPacienteRepository PacienteRepository;
+
     @Autowired
     ObjectMapper mapper;  // clase de la biblioteca Jackson, que se utiliza para convertir objetos Java en formato JSON y viceversa, para enviar respuestas HTTP en formato JSON
+
     private void guardarPaciente(PacienteDTO pacienteDTO){
         Paciente paciente = mapper.convertValue(pacienteDTO , Paciente.class);
         PacienteRepository.save(paciente);
@@ -42,6 +44,7 @@ public class PacienteService implements IPacienteService {
 
     @Override
     public void modificarPaciente(PacienteDTO pacienteDTO) {
+       //eliminarPaciente(pacienteDTO.getId());
         guardarPaciente(pacienteDTO);
     }
 
