@@ -16,7 +16,7 @@ public class TurnoController {
     @Autowired
     ITurnoService turnoService;
 
-    @PostMapping("/{id}")
+    @PostMapping("/registrar")
     public ResponseEntity<?> crearTurno(@RequestBody TurnoDTO turnoDTO){
         turnoService.crearTurno(turnoDTO);
         return ResponseEntity.ok(HttpStatus.OK);

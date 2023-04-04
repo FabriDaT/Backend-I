@@ -19,6 +19,7 @@ public class Paciente {
     private String apellido;
     @OneToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     @JoinColumn(name = "id_domicilio", referencedColumnName = "id")
+    @JsonIgnore
     private Domicilio domicilio;
     private int DNI;
     @OneToMany( mappedBy = "paciente")

@@ -1,6 +1,5 @@
 window.addEventListener('load', function () {
-    const listarTodos = document.getElementById('listar');
-    listarTodos.addEventListener('click', function() {
+
 
         (function(){
               //con fetch invocamos a la API de estudiantes con el método GET
@@ -19,7 +18,7 @@ window.addEventListener('load', function () {
                   //el estudiante
 
                   var table = document.getElementById("odontologoTable");
-                  var odontRow =table.insertRow();
+                  var odontRow =  table.insertRow();
                   let tr_id = 'tr_' + odont.id;
                   odontRow.id = tr_id;
 
@@ -48,8 +47,10 @@ window.addEventListener('load', function () {
                   //luego los datos del estudiante
                   //como ultima columna el boton eliminar
                  odontRow.innerHTML = '<td>' + updateButton + '</td>' +
-                                      '<td class=\"td_first_name\">' + odont.name.toUpperCase() + '</td>' +
-                                      '<td class=\"td_last_name\">' + odont.lastname.toUpperCase() + '</td>' +
+                                      '<td class=\"td_first_name\">' + odont.nombre+ '</td>' +
+                                      '<td class=\"td_last_name\">' + odont.apellido+ '</td>' +
+                                                                             '<td class=\"td_last_name\">' + odont.matricula+ '</td>' +
+
                                       '<td>' + deleteButton + '</td>';
 
                 };
@@ -64,7 +65,7 @@ window.addEventListener('load', function () {
           }
         })
 
-    })
+
 
 
 })

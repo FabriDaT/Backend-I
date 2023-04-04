@@ -1,7 +1,8 @@
 window.addEventListener('load', ()=>{
 
-    const formulario = document.querySelector('#form-agregar')
-    formulario.addEventListener('submit', (event)=>{
+    const formulario = document.querySelector('#form-agregar');
+
+    formulario.addEventListener('submit', function(event){
 
            //creamos un JSON que tendrá los datos del nuevo 
            const formData = {

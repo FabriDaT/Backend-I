@@ -1,6 +1,7 @@
 package com.dh.clinicaDental.proyIntegrador.Entity;
 
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 
 import java.time.LocalDate;
@@ -15,10 +16,12 @@ public class Turno {
     private LocalDate dia;
     private LocalTime hora;
     @ManyToOne
-    @JoinColumn(name = "paciente_id", nullable = false)
+    @JoinColumn(name = "paciente_id")
+
     private Paciente paciente;
     @ManyToOne
-    @JoinColumn(name = "odontologo_id", nullable = false)
+    @JoinColumn(name = "odontologo_id")
+
     private Odontologo odontologo;
 
 
