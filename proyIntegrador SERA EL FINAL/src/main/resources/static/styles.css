@@ -5,3 +5,11 @@ body{
     flex-direction: column;
     height: 100vh;
 }
+
+form{
+    margin: 4%;
+}
+
+form button{
+    margin-top: 4%;
+}

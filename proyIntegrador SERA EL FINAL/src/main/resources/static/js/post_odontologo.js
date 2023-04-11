@@ -1,10 +1,10 @@
 window.addEventListener('load', ()=>{
 
-    const formulario = document.querySelector('#form-agregar');
+    const formulario = document.getElementById('form-agregar');
 
     formulario.addEventListener('submit', function(event){
 
-           //creamos un JSON que tendrá los datos del nuevo 
+           //creamos un JSON que tendrá los datos del nuevo odont
            const formData = {
             nombre: document.querySelector('#nombre').value,
             apellido: document.querySelector('#apellido').value,

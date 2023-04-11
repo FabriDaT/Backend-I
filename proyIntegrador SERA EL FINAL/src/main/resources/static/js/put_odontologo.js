@@ -2,7 +2,7 @@
 window.addEventListener('load', function () {
 
     //Buscamos y obtenemos el formulario donde estan
-    //los datos que el usuario pudo haber modificado del estudiante
+    //los datos que el usuario pudo haber modificado del odontologo
     const formulario = document.querySelector('#update_odontologo_form');
     formulario.addEventListener('submit', function (event) {
         let odontologoId = document.querySelector('#odontologo_id').value;
@@ -11,14 +11,14 @@ window.addEventListener('load', function () {
         //a diferencia de un estudiante nuevo en este caso enviamos el id
         //para poder identificarlo y modificarlo para no cargarlo como nuevo
         const formData = {
-            id: document.querySelector('#odontologo_id').value,
+            //id: document.querySelector('#odontologo_id').value,
             nombre: document.querySelector('#nombre').value,
             apellido: document.querySelector('#apellido').value,
             matricula: document.querySelector('#matricula').value,
 
         };
 
-        //invocamos utilizando la función fetch la API estudiantes con el método PUT
+        //invocamos utilizando la función fetch la API odontologos con el método PUT
         //que modificará al estudiante que enviaremos en formato JSON
 
         const url = '/odontologo/'+odontologoId;

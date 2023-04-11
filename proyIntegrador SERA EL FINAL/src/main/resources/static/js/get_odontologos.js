@@ -1,9 +1,10 @@
+
+
 window.addEventListener('load', function () {
 
 
         (function(){
-              //con fetch invocamos a la API de estudiantes con el método GET
-              //nos devolverá un JSON con una colección de estudiantes
+
               const url = '/odontologos';
               const settings = {
                 method: 'GET'
@@ -11,11 +12,11 @@ window.addEventListener('load', function () {
             fetch(url,settings)
             .then(response => response.json())
             .then(data => {
-                 //recorremos la colección de estudiantes del JSON
+                 //recorremos la colección del JSON
                  for(odont of data){
-                  //por cada estudiante armaremos una fila de la tabla
+                  //por cada odont armaremos una fila de la tabla
                   //cada fila tendrá un id que luego nos permitirá borrar la fila si eliminamos
-                  //el estudiante
+                  //el odont
 
                   var table = document.getElementById("odontologoTable");
                   var odontRow =  table.insertRow();
@@ -23,9 +24,9 @@ window.addEventListener('load', function () {
                   odontRow.id = tr_id;
 
 
-                  //por cada estudiante creamos un boton delete que agregaremos en cada fila para poder eliminar la misma
+                  //por cada odont creamos un boton delete que agregaremos en cada fila para poder eliminar la misma
                   //dicho boton invocara a la funcion de java script deleteByKey que se encargará
-                  //de llamar a la API para eliminar al estudiante
+                  //de llamar a la API para eliminar al odont
                    let deleteButton = '<button' +
                                               ' id=' + '\"' + 'btn_delete_' + odont.id + '\"' +
                                               ' type="button" onclick="deleteBy('+odont.id+')" class="btn btn-danger btn_delete">' +
@@ -44,7 +45,7 @@ window.addEventListener('load', function () {
 
                   //armamos cada columna de la fila
                   //como primer columna pondremos el boton modificar
-                  //luego los datos del estudiante
+                  //luego los datos del odont
                   //como ultima columna el boton eliminar
                  odontRow.innerHTML = '<td>' + updateButton + '</td>' +
                                       '<td class=\"td_first_name\">' + odont.nombre+ '</td>' +
