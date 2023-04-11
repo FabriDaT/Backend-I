@@ -35,3 +35,13 @@
 [2023-04-0320:26:39] [ ERROR] [GlobalExceptionHandler:18] could not execute statement; SQL [n/a]; constraint [null]
 [2023-04-0320:27:59] [ ERROR] [GlobalExceptionHandler:18] could not execute statement; SQL [n/a]; constraint [null]
 [2023-04-0320:29:27] [ ERROR] [GlobalExceptionHandler:18] could not execute statement; SQL [n/a]; constraint [null]
+[2023-04-1110:40:20] [ ERROR] [GlobalExceptionHandler:18] JSON parse error: Cannot deserialize value of type `int` from String "undefined": not a valid `int` value
+[2023-04-1110:40:28] [ ERROR] [GlobalExceptionHandler:18] JSON parse error: Cannot deserialize value of type `int` from String "undefined": not a valid `int` value
+[2023-04-1111:10:18] [ ERROR] [GlobalExceptionHandler:18] not-null property references a null or transient value : com.dh.clinicaDental.proyIntegrador.Entity.Paciente.domicilio
+[2023-04-1111:11:16] [ ERROR] [GlobalExceptionHandler:18] not-null property references a null or transient value : com.dh.clinicaDental.proyIntegrador.Entity.Paciente.domicilio
+[2023-04-1112:04:47] [ ERROR] [GlobalExceptionHandler:18] not-null property references a null or transient value : com.dh.clinicaDental.proyIntegrador.Entity.Paciente.domicilio
+[2023-04-1112:07:01] [ ERROR] [GlobalExceptionHandler:18] not-null property references a null or transient value : com.dh.clinicaDental.proyIntegrador.Entity.Paciente.domicilio
+[2023-04-1112:25:03] [ ERROR] [GlobalExceptionHandler:18] not-null property references a null or transient value : com.dh.clinicaDental.proyIntegrador.Entity.Paciente.domicilio
+[2023-04-1112:37:30] [ ERROR] [GlobalExceptionHandler:18] not-null property references a null or transient value : com.dh.clinicaDental.proyIntegrador.Entity.Paciente.domicilio
+[2023-04-1112:38:28] [ ERROR] [GlobalExceptionHandler:18] not-null property references a null or transient value : com.dh.clinicaDental.proyIntegrador.Entity.Paciente.domicilio
+[2023-04-1112:50:31] [ ERROR] [GlobalExceptionHandler:18] JSON parse error: Cannot deserialize value of type `int` from String "undefined": not a valid `int` value

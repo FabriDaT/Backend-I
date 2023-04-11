@@ -1,5 +1,4 @@
 
-
 window.addEventListener('load', function () {
 
 
@@ -50,7 +49,7 @@ window.addEventListener('load', function () {
                  odontRow.innerHTML = '<td>' + updateButton + '</td>' +
                                       '<td class=\"td_first_name\">' + odont.nombre+ '</td>' +
                                       '<td class=\"td_last_name\">' + odont.apellido+ '</td>' +
-                                                                             '<td class=\"td_last_name\">' + odont.matricula+ '</td>' +
+                                      '<td class=\"td_last_name\">' + odont.matricula+ '</td>' +
 
                                       '<td>' + deleteButton + '</td>';
 
