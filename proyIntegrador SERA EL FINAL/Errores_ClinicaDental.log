@@ -45,3 +45,4 @@
 [2023-04-1112:37:30] [ ERROR] [GlobalExceptionHandler:18] not-null property references a null or transient value : com.dh.clinicaDental.proyIntegrador.Entity.Paciente.domicilio
 [2023-04-1112:38:28] [ ERROR] [GlobalExceptionHandler:18] not-null property references a null or transient value : com.dh.clinicaDental.proyIntegrador.Entity.Paciente.domicilio
 [2023-04-1112:50:31] [ ERROR] [GlobalExceptionHandler:18] JSON parse error: Cannot deserialize value of type `int` from String "undefined": not a valid `int` value
+[2023-04-1123:18:15] [ ERROR] [GlobalExceptionHandler:18] JSON parse error: Cannot deserialize value of type `int` from String "undefined": not a valid `int` value

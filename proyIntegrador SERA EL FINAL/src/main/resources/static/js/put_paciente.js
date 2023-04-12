@@ -52,8 +52,8 @@ window.addEventListener('load', function () {
                                                 document.querySelector('#paciente_id').value = pac.id;
                                                 document.querySelector('#nombre').value = pac.nombre;
                                                 document.querySelector('#apellido').value = pac.apellido;
-                                                document.querySelector('#DNI').value = pac.DNI;
-                                                document.querySelector('#domicilio_id').value = pac.domicilio_id;
+                                                document.querySelector('#DNI').value = pac.dni;
+                                                document.querySelector('#domicilio_id').value = pac.id_domicilio;
                                                 document.querySelector('#calle').value = pac.calle;
                                                 document.querySelector('#numero').value = pac.numero;
                                                 document.querySelector('#localidad').value = pac.localidad;

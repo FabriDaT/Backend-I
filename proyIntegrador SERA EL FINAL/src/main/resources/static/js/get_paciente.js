@@ -1,7 +1,6 @@
 
 window.addEventListener('load', function () {
 
-
         (function(){
 
               const url = '/pacientes';
@@ -50,11 +49,11 @@ window.addEventListener('load', function () {
                                       '<td class=\"td_first_name\">' + pacien.nombre+ '</td>' +
                                       '<td class=\"td_last_name\">' + pacien.apellido+ '</td>' +
                                       '<td class=\"td_DNI\">' + pacien.DNI+ '</td>' +
-                                      '<td class=\"td_domicilio_id\">' + pacien.domicilio.domicilio_id+ '</td>' +
-                                      '<td class=\"td_calle\">' + pacien.domicilio.calle+ '</td>' +
-                                      '<td class=\"td_numero\">' + pacien.domicilio.numero+ '</td>' +
-                                      '<td class=\"td_localidad\">' + pacien.domicilio.localidad+ '</td>' +
-                                      '<td class=\"td_provincia\">' + pacien.domicilio.provincia+ '</td>' +
+                                      '<td class=\"td_domicilio_id\">' + pacien.domicilio_id+ '</td>' +
+                                      '<td class=\"td_calle\">' + pacien.calle+ '</td>' +
+                                      '<td class=\"td_numero\">' + pacien.numero+ '</td>' +
+                                      '<td class=\"td_localidad\">' + pacien.localidad+ '</td>' +
+                                      '<td class=\"td_provincia\">' + pacien.provincia+ '</td>' +
 
                                       '<td>' + deleteButton + '</td>';
 
