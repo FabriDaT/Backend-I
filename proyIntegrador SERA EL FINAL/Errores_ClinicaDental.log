@@ -46,3 +46,34 @@
 [2023-04-1112:38:28] [ ERROR] [GlobalExceptionHandler:18] not-null property references a null or transient value : com.dh.clinicaDental.proyIntegrador.Entity.Paciente.domicilio
 [2023-04-1112:50:31] [ ERROR] [GlobalExceptionHandler:18] JSON parse error: Cannot deserialize value of type `int` from String "undefined": not a valid `int` value
 [2023-04-1123:18:15] [ ERROR] [GlobalExceptionHandler:18] JSON parse error: Cannot deserialize value of type `int` from String "undefined": not a valid `int` value
+[2023-04-1209:12:22] [ ERROR] [GlobalExceptionHandler:18] No default constructor for entity:  : com.dh.clinicaDental.proyIntegrador.Entity.Paciente
+[2023-04-1209:12:24] [ ERROR] [GlobalExceptionHandler:18] No default constructor for entity:  : com.dh.clinicaDental.proyIntegrador.Entity.Paciente
+[2023-04-1209:12:27] [ ERROR] [GlobalExceptionHandler:18] No default constructor for entity:  : com.dh.clinicaDental.proyIntegrador.Entity.Paciente
+[2023-04-1209:12:34] [ ERROR] [GlobalExceptionHandler:18] No default constructor for entity:  : com.dh.clinicaDental.proyIntegrador.Entity.Paciente
+[2023-04-1209:12:36] [ ERROR] [GlobalExceptionHandler:18] No default constructor for entity:  : com.dh.clinicaDental.proyIntegrador.Entity.Paciente
+[2023-04-1209:15:30] [ ERROR] [GlobalExceptionHandler:18] No fallback setter/field defined for creator property 'domicilio'
+[2023-04-1209:17:20] [ ERROR] [GlobalExceptionHandler:18] No default constructor for entity:  : com.dh.clinicaDental.proyIntegrador.Entity.Paciente
+[2023-04-1209:17:38] [ ERROR] [GlobalExceptionHandler:18] No default constructor for entity:  : com.dh.clinicaDental.proyIntegrador.Entity.Paciente
+[2023-04-1209:17:42] [ ERROR] [GlobalExceptionHandler:18] No default constructor for entity:  : com.dh.clinicaDental.proyIntegrador.Entity.Paciente
+[2023-04-1209:18:53] [ ERROR] [GlobalExceptionHandler:18] No default constructor for entity:  : com.dh.clinicaDental.proyIntegrador.Entity.Paciente
+[2023-04-1209:23:42] [ ERROR] [GlobalExceptionHandler:18] No fallback setter/field defined for creator property 'domicilio'
+[2023-04-1209:23:42] [ ERROR] [GlobalExceptionHandler:18] No default constructor for entity:  : com.dh.clinicaDental.proyIntegrador.Entity.Paciente
+[2023-04-1209:23:43] [ ERROR] [GlobalExceptionHandler:18] No default constructor for entity:  : com.dh.clinicaDental.proyIntegrador.Entity.Paciente
+[2023-04-1209:45:06] [ ERROR] [GlobalExceptionHandler:18] No default constructor for entity:  : com.dh.clinicaDental.proyIntegrador.Entity.Paciente
+[2023-04-1209:45:07] [ ERROR] [GlobalExceptionHandler:18] No default constructor for entity:  : com.dh.clinicaDental.proyIntegrador.Entity.Paciente
+[2023-04-1209:45:11] [ ERROR] [GlobalExceptionHandler:18] No default constructor for entity:  : com.dh.clinicaDental.proyIntegrador.Entity.Odontologo
+[2023-04-1209:45:21] [ ERROR] [GlobalExceptionHandler:18] No default constructor for entity:  : com.dh.clinicaDental.proyIntegrador.Entity.Paciente
+[2023-04-1210:00:23] [ ERROR] [GlobalExceptionHandler:18] No default constructor for entity:  : com.dh.clinicaDental.proyIntegrador.Entity.Paciente
+[2023-04-1210:00:31] [ ERROR] [GlobalExceptionHandler:18] No default constructor for entity:  : com.dh.clinicaDental.proyIntegrador.Entity.Odontologo
+[2023-04-1210:00:36] [ ERROR] [GlobalExceptionHandler:18] No default constructor for entity:  : com.dh.clinicaDental.proyIntegrador.Entity.Paciente
+[2023-04-1210:00:38] [ ERROR] [GlobalExceptionHandler:18] No default constructor for entity:  : com.dh.clinicaDental.proyIntegrador.Entity.Paciente
+[2023-04-1210:44:40] [ ERROR] [GlobalExceptionHandler:18] No default constructor for entity:  : com.dh.clinicaDental.proyIntegrador.Entity.Odontologo
+[2023-04-1210:44:43] [ ERROR] [GlobalExceptionHandler:18] No default constructor for entity:  : com.dh.clinicaDental.proyIntegrador.Entity.Paciente
+[2023-04-1210:44:45] [ ERROR] [GlobalExceptionHandler:18] No default constructor for entity:  : com.dh.clinicaDental.proyIntegrador.Entity.Paciente
+[2023-04-1210:45:33] [ ERROR] [GlobalExceptionHandler:18] No fallback setter/field defined for creator property 'domicilio'
+[2023-04-1210:51:52] [ ERROR] [GlobalExceptionHandler:18] No default constructor for entity:  : com.dh.clinicaDental.proyIntegrador.Entity.Paciente
+[2023-04-1210:51:53] [ ERROR] [GlobalExceptionHandler:18] No default constructor for entity:  : com.dh.clinicaDental.proyIntegrador.Entity.Paciente
+[2023-04-1210:52:29] [ ERROR] [GlobalExceptionHandler:18] No default constructor for entity:  : com.dh.clinicaDental.proyIntegrador.Entity.Odontologo
+[2023-04-1210:54:05] [ ERROR] [GlobalExceptionHandler:18] No default constructor for entity:  : com.dh.clinicaDental.proyIntegrador.Entity.Odontologo
+[2023-04-1210:54:12] [ ERROR] [GlobalExceptionHandler:18] No default constructor for entity:  : com.dh.clinicaDental.proyIntegrador.Entity.Odontologo
+[2023-04-1210:54:12] [ ERROR] [GlobalExceptionHandler:18] No default constructor for entity:  : com.dh.clinicaDental.proyIntegrador.Entity.Odontologo

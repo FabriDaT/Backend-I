@@ -1,7 +1,4 @@
-
 window.addEventListener('load', function () {
-
-        (function(){
 
               const url = '/pacientes';
               const settings = {
@@ -17,7 +14,7 @@ window.addEventListener('load', function () {
                   //el paciente
 
                   var table = document.getElementById("pacienteTable");
-                  var pacienRow =  table.insertRow();
+                  var pacienRow =  table.insertRow()
                   let tr_id = 'tr_' + pacien.id;
                   pacienRow.id = tr_id;
 
@@ -60,14 +57,14 @@ window.addEventListener('load', function () {
                 };
 
         })
-        })
 
-        (function(){
+
+         function nn(){
           let pathname = window.location.pathname;
           if (pathname == "/ListPaciente.html") {
               document.querySelector(".nav .nav-item a:last").addClass("active");
           }
-        })
+        }
 
 
 

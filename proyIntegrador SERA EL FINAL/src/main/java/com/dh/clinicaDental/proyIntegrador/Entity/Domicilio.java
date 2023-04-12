@@ -1,9 +1,15 @@
 package com.dh.clinicaDental.proyIntegrador.Entity;
 
 import jakarta.persistence.*;
+import lombok.Builder;
+import lombok.Getter;
+import lombok.Setter;
 
 @Entity
 @Table(name = "domicilios")
+@Builder
+@Getter
+@Setter
 public class Domicilio {
     @Id
     @SequenceGenerator(name = "domicilio_sequence",sequenceName = "domicilio_sequence", allocationSize = 1)
@@ -21,48 +27,5 @@ public class Domicilio {
     @OneToOne(mappedBy = "domicilio")
     private Paciente paciente;
 
-    public Integer getId() {
-        return id;
-    }
-
-
-    public String getCalle() {
-        return calle;
-    }
-
-    public void setCalle(String calle) {
-        this.calle = calle;
-    }
-
-    public int getNumero() {
-        return numero;
-    }
-
-    public void setNumero(int numero) {
-        this.numero = numero;
-    }
-
-    public String getLocalidad() {
-        return localidad;
-    }
-
-    public void setLocalidad(String localidad) {
-        this.localidad = localidad;
-    }
-
-    public String getProvincia() {
-        return provincia;
-    }
-
-    public void setProvincia(String provincia) {
-        this.provincia = provincia;
-    }
-
-    public Paciente getPaciente() {
-        return paciente;
-    }
-
-    public void setPaciente(Paciente paciente) {
-        this.paciente = paciente;
-    }
+   
 }

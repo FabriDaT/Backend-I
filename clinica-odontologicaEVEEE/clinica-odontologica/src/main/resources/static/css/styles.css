@@ -1,0 +1,17 @@
+    .activeBtn{
+    color: var(--bs-nav-link-color)!important;
+    }
+
+    input #fecha_hora, #fecha_hora_update{
+            border-bottom-right-radius: 0.375rem;
+            border-top-right-radius: 0.375rem;
+            border-color: #dee2e6;
+    }
+
+    .icon-tooth{
+    color: #727272;
+    }
+
+     .icon-tooth:hover{
+    color: #333;
+    }

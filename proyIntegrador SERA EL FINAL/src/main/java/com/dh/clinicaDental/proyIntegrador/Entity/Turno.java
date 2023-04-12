@@ -3,11 +3,13 @@ package com.dh.clinicaDental.proyIntegrador.Entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
+import lombok.Builder;
 
 import java.time.LocalDate;
 import java.time.LocalTime;
 @Entity
 @Table(name="turnos")
+@Builder
 public class Turno {
     @Id
     @SequenceGenerator(name = "turno_sequence",sequenceName = "turno_sequence", allocationSize = 1)

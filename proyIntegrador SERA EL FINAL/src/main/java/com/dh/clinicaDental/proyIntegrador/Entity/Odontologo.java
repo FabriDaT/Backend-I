@@ -2,11 +2,13 @@ package com.dh.clinicaDental.proyIntegrador.Entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
+import lombok.Builder;
 
 import java.util.List;
 import java.util.Set;
 @Entity
 @Table(name = "odontologos")
+@Builder
 public class Odontologo {
     @Id
     @SequenceGenerator(name = "odontologo_sequence",sequenceName = "odontologo_sequence", allocationSize = 1)

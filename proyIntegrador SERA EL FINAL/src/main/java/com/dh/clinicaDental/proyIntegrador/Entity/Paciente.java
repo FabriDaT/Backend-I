@@ -1,6 +1,7 @@
 package com.dh.clinicaDental.proyIntegrador.Entity;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
+import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -13,6 +14,7 @@ import java.util.Set;
 @Entity
 @Table( name = "pacientes")
 @Getter
+@Builder
 public class Paciente {
     @Id
     @SequenceGenerator(name = "paciente_sequence", sequenceName = "paciente_sequence",allocationSize = 1)
